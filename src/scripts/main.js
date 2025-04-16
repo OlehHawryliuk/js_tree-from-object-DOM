@@ -24,11 +24,11 @@ function createTree(element, data) {
   const ul = document.createElement('ul');
 
   for (const key in data) {
-    li = document.createElement('li');
+    const li = document.createElement('li');
 
     li.textContent = key;
 
-    if (Objectk.keys(data[key])) {
+    if (Object.keys(data[key])) {
       createTree(li, data[key]);
     }
 
